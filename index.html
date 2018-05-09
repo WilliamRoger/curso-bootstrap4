@@ -9,6 +9,38 @@
 		<title>Caravan</title>
 	</head>
 	<body>
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Entre na sua Conta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" class="form-control" id="loginEmail">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="loginSenha">
+                <label class="form-check-label" for="loginSenha">Mantenha-me conectado</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Entrar</button>
+              <small class="form-text text-muted">Esquceu a senha? <a href="#">Clique aqui.</a></small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fecha Modal -->
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
       <a href="#" class="navbar-brand">
         <img src="img/caravan.svg" alt="caravan">
@@ -34,7 +66,7 @@
             <a href="#contato.html" class="nav-link">Contato</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Login</a>
+            <a href="#" class="nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
           </li>
           <li class="nav-item">
             <a href="#" class="btn btn-outline-primary ml-md-2">Inscreva-se</a>
@@ -210,7 +242,7 @@
       </div>
     </section>
 
-    <footer class="bg-dark text-white">
+    <footer class="bg-dark text-white mt-5">
       <div class="container py-4">
         <div class="row">
           <div class="col-md-3 col-6">

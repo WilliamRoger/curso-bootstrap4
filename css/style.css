@@ -16,9 +16,21 @@ body {
   background-size: cover;
   background-position: center center;
 }
-
+.lista-redes-sociais-contato a,
 .lista-redes-sociais a {
   max-width: 140px;
+}
+
+.lista-redes-sociais-contato a {
+  min-width: 110px;
+}
+
+.lista-redes-sociais-contato {
+  display: inline-flex;
+}
+
+.lista-redes-sociais-contato li {
+  margin-right: 1rem;
 }
 
 .lista-plano li {
